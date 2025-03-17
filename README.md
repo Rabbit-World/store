@@ -1,7 +1,7 @@
 # rabbit r1 App Store
 EXPERIMENTAL: various apps, games and/or tools for rabbit r1
 
-## iPad/iPhone/mobile HTML/CSS template for web apps (responsive, no javascript)
+## HTML/CSS/JS template for web apps (responsive)
 
 Demo: https://rabbit-world.github.io/store/
 
