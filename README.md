@@ -1,11 +1,13 @@
 # rabbit r1 App Store
+
 EXPERIMENTAL: various apps, games and/or tools for rabbit r1
 
-# iPad/iPhone/mobile HTML/CSS template for web apps (responsive, no javascript)
+# iPad/iPhone/mobile HTML/CSS template for web apps 
+# (responsive, no javascript)
 
 Demo: https://rabbit-world.github.io/store/
 
-iPad/iPhone template made in pure HTML and CSS (no JavaScript needed) that works perfectly on any modern browser (iPad (including iPad 3), iPhone, tablets, mobiles, laptops, etc.). The template uses responsive queries to hide the sidebar in iPad portrait mode and in the iPhone and smaller screens (you can disable that easily if you want to).
+rabbit r1 App Store template made in pure HTML and CSS (no JavaScript needed) that works perfectly on any modern browser (iPad (including iPad 3), iPhone, tablets, mobiles, laptops, etc.). The template uses responsive queries to hide the sidebar in iPad portrait mode and in the iPhone and smaller screens (you can disable that easily if you want to).
 
 This template is the perfect start for any front-end or back-end developer to build complex web apps without spending time on developing the main structure. Or even to create a mobile version of your current site.
 
@@ -71,6 +73,7 @@ The best of it, I am releasing it under a Public Domain license. This means it i
 
 
 ## Comments, improvements, feedback, feature requests and bugs
+
 If you have any comments, doubts or would like to point out a bug or a feature request you can write a comment at the article (link at the top) or tweet me at @xaviesteve in Twitter. 
 
 
@@ -81,9 +84,13 @@ If you code your own improvements and would like to share them with everyone let
 
 ## Changelog
 
-### Version 1.0 (16 March 2025)
+### Version 2.0 (16 March 2025)
 
-* Moved sidebar to the bottom of the HTML.
+* Added DISQUS
+
+### Version 1.0 (31 January 2012)
+
+* Moved sidebar to the bottom of the HTML
 * Fixed content header left and right link clickable area
 * Added commented <link rel="stylesheet">, <script> and favicon for faster development
 * Disabled the callout shown when you touch and hold a touch target (thanks 185)
