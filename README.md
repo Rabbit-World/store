@@ -72,8 +72,7 @@ The best of it, I am releasing it under a Public Domain license. This means it i
 
 ## Comments, improvements, feedback, feature requests and bugs
 
-If you have any comments, doubts or would like to point out a bug or a feature request you can write a comment at the article (link at the top) or tweet me at @xaviesteve in Twitter. 
-
+If you have any comments, doubts or would like to point out a bug or a feature request you can write a comment at the article (link at the top) or tweet me at [@AssistedProfile](https://x.com/AssistedProfile) on X.com. 
 
 ## Contribute
 
