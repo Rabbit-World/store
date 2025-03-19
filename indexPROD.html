@@ -48,7 +48,7 @@
             <div class="content">
 			
 			<div class="slideshow-container">
-				<div class="video-slide">
+				<div class="video-slide active">
 					<iframe width="100%" height="450" src="https://www.youtube.com/embed/esS51zPFSTs?si=GpBKfvnq002FpWlH" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 				</div>
 				<div class="video-slide">
@@ -139,7 +139,7 @@
 		let slideIndex = 1;
 		showSlides(slideIndex);
 
-	   (n) {
+		function plusSlides(n) {
 			showSlides(slideIndex += n);
 		}
 
@@ -149,9 +149,9 @@
 			if (n > slides.length) {slideIndex = 1}
 			if (n < 1) {slideIndex = slides.length}
 			for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";
+				slides[i].classList.remove("active");
 			}
-			slides[slideIndex-1].style.display = "block";
+			slides[slideIndex-1].classList.add("active");
 		}
 	</script>
 	
