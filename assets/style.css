@@ -82,13 +82,8 @@ border-color:#9A8185;}
             margin: auto;
         }
         .video-slide {
-            display: none;
+            display: block;
             text-align: center;
-        }
-        .video-slide iframe {
-            width: 100%;
-            max-width: 560px;
-            height: 315px;
         }
         .prev, .next {
             cursor: pointer;
@@ -111,7 +106,7 @@ border-color:#9A8185;}
         .prev:hover, .next:hover {
             background-color: rgba(0,0,0,0.8);
         }
-		
+
 	#sidebar {background:#BCBEC4;border-right:1px solid #000;height:100%;left:0;position:fixed;top:0;vertical-align:top;width:300px;z-index:1;}
 		#sidebar .header {width:300px;}
 			#sidebar .header .title {}
