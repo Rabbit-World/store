@@ -75,16 +75,18 @@ background: -moz-linear-gradient(top, #d58e94 0%, #d42e32 50%, #be1012 51%, #901
 border-color:#9A8185;}
 
 		/*YOUTUBE*/
-
         .slideshow-container {
             position: relative;
             max-width: 100%;
             margin: auto;
         }
-        .video-slide {
-            display: block;
-            text-align: center;
-        }
+		.video-slide {
+			display: none;
+			text-align: center;
+		}
+		.video-slide.active {
+			display: block;
+		}
         .prev, .next {
             cursor: pointer;
             position: absolute;
@@ -107,7 +109,7 @@ border-color:#9A8185;}
             background-color: rgba(0,0,0,0.8);
         }
 
-	#sidebar {background:#BCBEC4;border-right:1px solid #000;height:100%;left:0;position:fixed;top:0;vertical-align:top;width:300px;z-index:1;}
+		#sidebar {background:#BCBEC4;border-right:1px solid #000;height:100%;left:0;position:fixed;top:0;vertical-align:top;width:300px;z-index:1;}
 		#sidebar .header {width:300px;}
 			#sidebar .header .title {}
 		#sidebar .content {padding: 43px 0 20px 0;}
