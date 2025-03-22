@@ -144,6 +144,10 @@ If you code your own improvements and would like to share them with everyone let
 
 ## Changelog
 
+### Version 2.1 (21 March 2025)
+
+ * Added [Buy me a carrot](https://buymeacoffee.com/rabbitworld) badge
+
 ### Version 2.0 (16 March 2025)
 
 * Added DISQUS
