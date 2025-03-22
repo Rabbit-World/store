@@ -43,8 +43,20 @@
             
             <div class="content">
             
+			<div class="slideshow-container">
+				<div class="video-slide active">
+					<iframe width="100%" height="450" src="https://www.youtube.com/embed/xi6rBJEI91w?si=RQIYr-eNDFn4JdEV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+				<div class="video-slide">
+					<iframe width="100%" height="450" src="https://www.youtube.com/embed/9Ua8M8rV6Ek?si=a-g8Nn6R_95E9TOt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			
 				<center>
-				<iframe width="100%" height="450" src="https://www.youtube.com/embed/xi6rBJEI91w?si=RQIYr-eNDFn4JdEV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<!--iframe width="100%" height="450" src="https://www.youtube.com/embed/xi6rBJEI91w?si=RQIYr-eNDFn4JdEV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe-->
 				</center>
 				
                 <h2 class="title" data-translatable>App Description // Descrizione dell'App</h2>
@@ -128,6 +140,26 @@
         
     </div><!--wrap-->
 
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function showSlides(n) {
+			let i;
+			let slides = document.getElementsByClassName("video-slide");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].classList.remove("active");
+			}
+			slides[slideIndex-1].classList.add("active");
+		}
+	</script>
+	
 	<script>
 		/**
 		*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
