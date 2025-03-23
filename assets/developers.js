@@ -1,36 +1,39 @@
+document.getElementById('page-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const title = document.getElementById('title').value;
+  const content = document.getElementById('content').value;
+  
+  // Crea il contenuto del file HTML
+  const htmlContent = `
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>rabbit r1 App Store</title>
-	<meta name="description" content="Welcome to the rabbit r1 App Store! Discover a wide range of apps and creative content related to the r1's world. Become a Developer today and publish your APP or ask the community to create the APP you need!">
-    <meta property="og:title" content="rabbit r1 App Store">
-    <meta property="og:description" content="Welcome to the UNOFFICIAL rabbit r1 App Store! Discover a wide range of apps and creative content related to the r1's world. Become a Developer today and publish your APP or ask the community to create the APP you need!!">
-    <meta property="og:image" content="https://rabbit-world.github.io/store/assets/apps/settings.png">
-    <meta property="og:url" content="https://rabbit-world.github.io/store/">	<!--
-	Minimal web app HTML/CSS template (Responsive Web Design, no JS required)
+	<head>
+		<title>APPS | rabbit r1 App Store</title>
+		<!--
+		Minimal web app HTML/CSS template (Responsive Web Design, no JS required)
 
-	@author DoDa
-	@website https://rabbit-world.github.io
-	@version 2.0
-	@Last Updated: 16 March 2025
-	@license Public Domain (free + no need to attribute, I'd be glad if you send me a link to your creation)
+		@author DoDa
+		@website https://rabbit-world.github.io
+		@version 2.0
+		@Last Updated: 16 March 2025
+		@license Public Domain (free + no need to attribute, I'd be glad if you send me a link to your creation)
 
 
-	Notes:
-	- Header position bug when scrolling: When you scroll down, the header may move to the middle of the screen. Fix it by removing the # from the URL.
+		Notes:
+		- Header position bug when scrolling: When you scroll down, the header may move to the middle of the screen. Fix it by removing the # from the URL.
 
-	-->
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/> 
-	<link rel="apple-touch-icon" href="favicon-114.png" />
-	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- hide top bar in mobile safari-->
-	<!--<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> translucent top bar -->
-	<link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
-	<link rel="shortcut icon" href="favicon.png">
-	<script src="https://kit.fontawesome.com/16b670d8d3.js" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/davidshimjs-qrcodejs@0.0.2/qrcode.min.js"></script>
-	
-</head>
+		-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/> 
+		<link rel="apple-touch-icon" href="../favicon-114.png" />
+		<meta name="apple-mobile-web-app-capable" content="yes" /><!-- hide top bar in mobile safari-->
+		<!--<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> translucent top bar -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../assets/style.css" />
+		<link rel="shortcut icon" href="../favicon.png">
+		<script src="https://kit.fontawesome.com/16b670d8d3.js" crossorigin="anonymous"></script>
+		
+	</head>
 
 <body>
 
@@ -40,7 +43,7 @@
         
             <div class="header">
                 
-                <!--a class="left" href="?" data-translatable>Back // Indietro</a-->
+                <a class="left" href="../" data-translatable>Back // Indietro</a>
                 <h1 class="title"><i class="fa-solid fa-carrot"></i> rabbit r1 App Store</h1>
                 <a class="right" href="https://rabbit-world.github.io" data-translatable>Exit // Esci</a>
                 
@@ -50,25 +53,10 @@
 			
 			<div class="slideshow-container">
 				<div class="video-slide active">
-					<iframe width="100%" height="450" src="https://www.youtube.com/embed/esS51zPFSTs?si=GpBKfvnq002FpWlH" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</div>
-				<div class="video-slide">
-					<iframe width="100%" height="450" src="https://www.youtube.com/embed/LY9PYTgCuOg?si=iZ56vjDTqxEvIjBo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</div>
-				<div class="video-slide">
 					<iframe width="100%" height="450" src="https://www.youtube.com/embed/Fqr3OeWBizk?si=LIICvEs4jCyjTNG3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 				</div>
 				<div class="video-slide">
 					<iframe width="100%" height="450" src="https://www.youtube.com/embed/SCICYF8ml8g?si=v1zBqXEoBQtXWzv_" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</div>
-				<div class="video-slide">
-					<iframe width="100%" height="450" src="https://www.youtube.com/embed/QriydxN94xw?si=e3Xp-2NL49B-WTFI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</div>
-				<div class="video-slide">
-					<iframe width="100%" height="450" src="https://www.youtube.com/embed/oaHUImNdQ-4?si=H5QY8cBxZiaZs4Qc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</div>
-				<div class="video-slide">
-					<iframe width="100%" height="450" src="https://www.youtube.com/embed/qzaAdUH5ICM?si=ttdDGonqXsBkp55F" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 				</div>
 				<div class="video-slide">
 					<iframe width="100%" height="450" src="https://www.youtube.com/embed/SbzJEzfIoZ0?si=kESYgSynXOl4jRgF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -77,11 +65,14 @@
 				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 				<a class="next" onclick="plusSlides(1)">&#10095;</a>
 			</div>
+			
 			<center>
+			<!--span class="ico msg"><picture><source type="image/webp" srcset="assets/apps/store.webp" style="position: absolute; height: 10%; width: 10%; inset: 0px; color: transparent;"><img src="assets/apps/app.png" alt="rabbit r1 App Store"></picture></span-->
+			<!--picture><source type="image/webp" srcset="assets/apps/store.webp" style="height: 400px; border-radius: 10px; object-fit: cover; color: transparent;"><img src="assets/apps/store.png" alt="rabbit r1 App Store"-->
 			<!--iframe width="100%" height="450" src="https://www.youtube.com/embed/esS51zPFSTs?si=GpBKfvnq002FpWlH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe-->
 			</center>
 			
-                <h2 class="title" data-translatable>Description // Descrizione</h2>
+                <h2 class="title" data-translatable>Applications // Applicazioni</h2>
 
                 <div class="box-white">
                     <br /> <strong><i class="fa-solid fa-carrot"></i> rabbit r1 App Store</strong><p data-translatable> is an experimental directory that offers innovative applications, games and tools for your rabbit r1 device. // è una directory sperimentale che offre applicazioni, giochi e strumenti innovativi per il tuo dispositivo rabbit r1.</p>
@@ -93,32 +84,9 @@
                         <tr><th data-translatable>Latest Apps // Ultime App</th><th data-translatable>Version // Versione</th><th data-translatable>Dimension // Dimensione</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="apps/app_conversions.html" data-translatable>Conversions</a></td><td><b data-translatable>Final // Finale</b></td><td><i class="fa-solid fa-carrot"></i></i></td></tr>
+                        <tr><td><a href="../apps/app_conversions.html" data-translatable>Conversions</a></td><td><b data-translatable>Final // Finale</b></td><td><i class="fa-solid fa-carrot"></i></i></td></tr>
                         <tr><td><a href="https://github.com/Rabbit-World/store/upload/main/apps" target="_blank" data-translatable>Insert an app... // Inserisci un app...</a></td><td data-translatable>beta</td><td>n/a</td></tr>
                         <tr><td><a href="https://rabbit-world.github.io/#contact" target="_blank" data-translatable>Request an app... // Richiedi un app...</a></td><td data-translatable>alpha</td><td>n/a</td></tr>
-                    </tbody>
-                </table>
-                
-                <table>
-                    <thead>
-                        <tr><th data-translatable>Latest Games // Ultimi Giochi</th><th data-translatable>Version // Versione</th><th data-translatable>Dimension // Dimensione</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td><a href="games/app_tama.html" data-translatable>Rabbitgotchi</a></td><td>1.0 beta</td><td><i class="fa-solid fa-carrot"></i> <i class="fa-solid fa-carrot"></i></td></tr>
-                        <tr><td><a href="games/app_castaway.html" data-translatable>r1Castaway</a></td><td>1.0 alpha</td><td><i class="fa-solid fa-carrot"></i> <i class="fa-solid fa-carrot"></i> <i class="fa-solid fa-carrot"></i></td></tr>
-                        <tr><td><a href="https://github.com/Rabbit-World/store/upload/main/games" target="_blank" data-translatable>Insert a game... // Inserisci un gioco...</a></td><td data-translatable>beta</td><td>n/a</td></tr>
-                        <tr><td><a href="https://rabbit-world.github.io/#contact" target="_blank" data-translatable>Request a game... // Richiedi un gioco...</a></td><td data-translatable>alpha</td><td>n/a</td></tr>
-                    </tbody>
-                </table>
-                
-                <table>
-                    <thead>
-                        <tr><th data-translatable>Latest Tools // Ultimi Strumenti</th><th data-translatable>Version // Versione</th><th data-translatable>Dimension // Dimensione</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td><a href="tools/app_ocrabbit.html" data-translatable>OCRabbit</a></td><td>1.0</td><td><i class="fa-solid fa-carrot"></i></i></td></tr>
-                        <tr><td><a href="https://github.com/Rabbit-World/store/upload/main/tools" target="_blank" data-translatable>Insert a tool... // Inserisci un tool...</a></td><td data-translatable>beta</td><td>n/a</td></tr>
-                        <tr><td><a href="https://rabbit-world.github.io/#contact" target="_blank" data-translatable>Request a tool... // Richiedi un tool...</a></td><td data-translatable>alpha</td><td>n/a</td></tr>
                     </tbody>
                 </table>
                 
@@ -133,31 +101,7 @@
             </div><!--content-->
 
         </div><!--main-->
-		
-		<div id="qrcode-container" style="position: fixed; bottom: 10%; right: 12px; z-index: 3;">
-			<div>
-				<button aria-label="paste" style="cursor: pointer; background: none; border: none;">
-				<div id="qrcode"></div>
-				</button>
-			</div>
-		</div>
-
-		<script>
-			function generateQRCode() {
-				const url = window.location.href;
-				const qrcode = new QRCode(document.getElementById('qrcode'), {
-					text: url,
-					width: 64,
-					height: 64,
-					colorDark: "#000000",
-					colorLight: "#ff813f",
-					correctLevel: QRCode.CorrectLevel.H
-				});
-			}
-
-			generateQRCode();
-		</script>
-
+    
         <div id="sidebar">
             
             <div class="header">
@@ -167,21 +111,24 @@
             <div class="content">
                 
                 <ul class="nav">
-                    <li><a href="apps/index.html"><span class="ico msg"><picture><source type="image/webp" srcset="assets/apps/settings.webp"><img src="assets/apps/settings.png" alt="-APP+"></picture></span><b data-translatable>Apps // Applicazioni</b></a></li>
-                    <li><a href="games/index.html"><span class="ico msg"><picture><source type="image/webp" srcset="assets/apps/settings.webp"><img src="assets/apps/settings.png" alt="-APP+"></picture></span><b data-translatable>Games // Giochi</b></a></li>
-                    <li><a href="tools/index.html"><span class="ico msg"><picture><source type="image/webp" srcset="assets/apps/settings.webp"><img src="assets/apps/settings.png" alt="-APP+"></picture></span><b data-translatable>Tools // Strumenti</b></a></li>
-                    <li><a href="lab/index.html"><span class="ico msg"><picture><source type="image/webp" srcset="assets/apps/settings.webp"><img src="assets/apps/settings.png" alt="-APP+"></picture></span><b data-translatable>r1 LAB</b></a></li>
-                    <li><a href="info/settings.html"><span class="ico msg"><picture><source type="image/webp" srcset="assets/apps/settings.webp"><img src="assets/apps/settings.png" alt="-APP+"></picture></span><b data-translatable>Settings // Impostazioni</b><span><b data-translatable>Off // Off</span></a></li>
+                    <li><a href="../apps/index.html" class="active"><span class="ico msg"><picture><source type="image/webp" srcset="../assets/apps/settings.webp"><img src="../assets/apps/settings.png" alt="-APP+"></picture></span><b data-translatable>Apps // Applicazioni</b><span class="info">1</span></a></li>
+                    <li><a href="https://github.com/Rabbit-World/store/upload/main/apps" target="_blank"><span class="ico msg"><picture><source type="image/webp" srcset="../assets/apps/app.webp"><img src="../assets/apps/app.png" alt="APP-"></picture></span><b data-translatable>Upload an app... // Inserisci un app...</b></a></li>
+                    <li><a href="https://rabbit-world.github.io/#contact" target="_blank"><span class="ico msg"><picture><source type="image/webp" srcset="../assets/apps/app.webp"><img src="../assets/apps/app.png" alt="APP+"></picture></span><b data-translatable>Request an app... // Richiedi un app...</b></a></li>
+                    <li><a href="../apps/app_conversions.html"><span class="ico msg"><picture><source type="image/webp" srcset="../assets/apps/app_conversions.webp"><img src="../assets/apps/settings.png" alt="-APP+"></picture></span><b data-translatable>Conversions</b></a></li>
+                    <li><a href="../games/index.html"><span class="ico msg"><picture><source type="image/webp" srcset="../assets/apps/settings.webp"><img src="../assets/apps/settings.png" alt="-APP+"></picture></span><b data-translatable>Games // Giochi</b></a></li>
+                    <li><a href="../tools/index.html"><span class="ico msg"><picture><source type="image/webp" srcset="../assets/apps/settings.webp"><img src="../assets/apps/settings.png" alt="-APP+"></picture></span><b data-translatable>Tools // Strumenti</b></a></li>
+                    <li><a href="../lab/index.html"><span class="ico msg"><picture><source type="image/webp" srcset="../assets/apps/settings.webp"><img src="../assets/apps/settings.png" alt="-APP+"></picture></span><b data-translatable>r1 LAB</b></a></li>
+                    <li><a href="../info/settings.html"><span class="ico msg"><picture><source type="image/webp" srcset="../assets/apps/settings.webp"><img src="../assets/apps/settings.png" alt="-APP+"></picture></span><b data-translatable>Settings // Impostazioni</b><span><b data-translatable>Off // Off</b></span></a></li>
                 </ul>
-
-                <p data-translatable><center><br /> <a href="https://www.buymeacoffee.com/RabbitWorld" target="_blank"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a carrot&emoji=🥕&slug=RabbitWorld&button_colour=058CF5&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a></center></p>
-                                
+                
+                <p data-translatable><center><a href="https://www.buymeacoffee.com/RabbitWorld" target="_blank"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a carrot&emoji=🥕&slug=RabbitWorld&button_colour=058CF5&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a></center></p>
+                
             </div><!--content-->
             
         </div><!--sidebar-->
         
     </div><!--wrap-->
-	
+
 	<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="RabbitWorld" data-description="Support me on Buy me a carrot!" data-message="Thank you for visiting. We can now earn more carrots..." data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 	
 	<script>
@@ -224,7 +171,7 @@
 	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 	
     <!--================== TRANSLATIONS ==================-->
-    <script src="assets/dom-i18n.js"></script>
+    <script src="../assets/dom-i18n.js"></script>
 	<script>
 		function toggleLanguageDropdown() {
 		  document.getElementById('language-dropdown').classList.toggle('show-dropdown');
@@ -232,13 +179,13 @@
 
 		function changeLanguage(lang, country) {
 		  // Aggiorna la bandiera corrente
-		  document.getElementById('current-flag').className = `flag-icon flag-icon-${country}`;
+		  document.getElementById('current-flag').className = `\flag-icon flag-icon-${country}\`;
 		  
 		  // Chiudi il dropdown
 		  document.getElementById('language-dropdown').classList.remove('show-dropdown');
 		  
 		  // Qui puoi aggiungere la logica per cambiare la lingua del sito
-		  console.log(`Changing language to: ${lang}`);
+		  console.log(\`Changing language to: ${lang}\`);
 		}
 
 		// Chiudi il dropdown se si clicca fuori
@@ -289,7 +236,7 @@
 		// Funzione per aggiornare le immagini in base alla lingua
 		function updateImages(language) {
 		document.querySelectorAll('[data-translatable]').forEach(img => {
-		  const newSrc = img.getAttribute(`data-img-${language}`);
+		  const newSrc = img.getAttribute(\`data-img-${language}\`);
 		  if (newSrc) {
 			img.src = newSrc;
 		  }
@@ -464,7 +411,19 @@
 		}
     </script>
 
-	<script src="assets/qrcode.min.js"></script>
+    <script src="assets/qrcode.min.js"></script>
 
 </body>
 </html>
+
+  `;
+  
+  // Crea un blob per il file HTML
+  const blob = new Blob([htmlContent], { type: 'text/html' });
+  
+  // Crea un link per scaricare il file
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = `${title}.html`;
+  link.click();
+});

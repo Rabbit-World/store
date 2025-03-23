@@ -106,6 +106,30 @@
         
         </div><!--main-->
     
+		<div id="qrcode-container" style="position: fixed; bottom: 10%; right: 12px; z-index: 3;">
+			<div>
+				<button aria-label="paste" style="cursor: pointer; background: none; border: none;">
+				<div id="qrcode"></div>
+				</button>
+			</div>
+		</div>
+
+		<script>
+			function generateQRCode() {
+				const url = window.location.href;
+				const qrcode = new QRCode(document.getElementById('qrcode'), {
+					text: url,
+					width: 64,
+					height: 64,
+					colorDark: "#000000",
+					colorLight: "#ff813f",
+					correctLevel: QRCode.CorrectLevel.H
+				});
+			}
+
+			generateQRCode();
+		</script>
+
         <div id="sidebar">
             
             <div class="header">
@@ -393,7 +417,7 @@
 		}
     </script>
 
-    <!--script src="assets/script.js"></script-->
+    <script src="../assets/qrcode.min.js"></script>
 
 </body>
 </html>
