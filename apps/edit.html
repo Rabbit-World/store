@@ -90,18 +90,19 @@
                 
 				<h2 class="title2"><b data-translatable>App's Details // Dettagli Applicazione</b></h2>
 				
-				<div class="box-white">  <form id="page-form">
-
+				<div class="box-white">
+				<form id="page-form">
 					<p><label for="field1"><b data-translatable>App's Name // Nome App</b></label><input type="text" id="app" name="app" value=""></p>
 					<p><label for="field2"><b data-translatable>App's Version // Versione App</b></label><input type="text" id="version" name="version" value=""></p>
-					<p><label for="field3"><b data-translatable>App's Dimension // Dimensione App</b></label><select id="dimension" name="dimension">
-					<option><b data-translatable><i class="fa-solid fa-carrot"></i></b></option>
-					<option><b data-translatable><i class="fa-solid fa-carrot"></i><i class="fa-solid fa-carrot"></i></b></option>
-					<option><b data-translatable><i class="fa-solid fa-carrot"></i><i class="fa-solid fa-carrot"></i><i class="fa-solid fa-carrot"></i></b></option>
-					<option><b data-translatable><i class="fa-solid fa-carrot"></i><i class="fa-solid fa-carrot"></i><i class="fa-solid fa-carrot"></i><i class="fa-solid fa-carrot"></i></b></option>
-					<option><b data-translatable><i class="fa-solid fa-carrot"></i><i class="fa-solid fa-carrot"></i><i class="fa-solid fa-carrot"></i><i class="fa-solid fa-carrot"></i><i class="fa-solid fa-carrot"></i></b></option>
-					</select></p>
-					  
+					<p><label for="field3"><b data-translatable>App's Dimension // Dimensione App</b></label><select>
+					<ul id="dimension" name="dimension">
+					<option data-icon="fa-carrot" value="1"><b data-translatable>1 carrot // 1 carota</b></option>
+					<option data-icon="fa-carrot" value="2"><b data-translatable>2 carrots // 2 carote</b></option>
+					<option data-icon="fa-carrot" value="3"><b data-translatable>3 carrots // 3 carote</b></option>
+					<option data-icon="fa-carrot" value="4"><b data-translatable>4 carrots // 4 carote</b></option>
+					<option data-icon="fa-carrot" value="5"><b data-translatable>5 carrots // 5 carote</b></option>
+					</ul>
+					</select></p>				  
 					<p><label for="field4"><b data-translatable>Language // Lingua</b></label><select id="applang" name="applang">
 					<option>English (United States)</option>
 					<option>English (United Kingdom)</option>
