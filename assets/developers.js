@@ -95,7 +95,7 @@ document.getElementById('page-form').addEventListener('submit', function(e) {
                         <tr><th data-translatable>Tools // Strumenti</th><th data-translatable>Version // Versione</th><th data-translatable>Dimension // Dimensione</th></tr>
                     </thead>
                     <tbody>
-                        <!--tr><td><a href="../tools/app_NAME.html" data-translatable>NAME</a></td><td>VERSION</td><td><i class="fa-solid fa-carrot"></i></i></td></tr>
+                        <!--tr><td><a href="../tools/app_NAME.html" data-translatable>NAME</a></td><td>VERSION</td><td><i class="fa-solid fa-carrot"></i></i></td></tr-->
                     </tbody>
                     <tbody>
                         <tr><td><a href="https://github.com/Rabbit-World/store/upload/main/tools" target="_blank" data-translatable>Insert a tool... // Inserisci un tool...</a></td><td data-translatable>beta</td><td>n/a</td></tr>
