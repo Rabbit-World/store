@@ -179,7 +179,7 @@ document.getElementById('page-form').addEventListener('submit', function(e) {
 
 		function changeLanguage(lang, country) {
 		  // Aggiorna la bandiera corrente
-		  document.getElementById('current-flag').className = `\flag-icon flag-icon-\${country}\`;
+		  document.getElementById('current-flag').className = \`flag-icon flag-icon-\${country}\`;
 		  
 		  // Chiudi il dropdown
 		  document.getElementById('language-dropdown').classList.remove('show-dropdown');
@@ -411,7 +411,7 @@ document.getElementById('page-form').addEventListener('submit', function(e) {
 		}
     </script>
 
-    <script src="assets/qrcode.min.js"></script>
+    <script src="../assets/qrcode.min.js"></script>
 
 </body>
 </html>
