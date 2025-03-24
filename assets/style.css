@@ -84,6 +84,16 @@ border-color:#9A8185;}
   border-color: #3E8E41; /* border color dark green */
 }
 
+#qrcode-container {
+    display: none; /* Hide for default */
+}
+
+/* Show QR only on desktops and tablets */
+@media only screen and (min-width: 768px) {
+    #qrcode-container {
+        display: block; /* Mostra su desktop e tablet */
+    }
+}
 		/*YOUTUBE*/
         .slideshow-container {
             position: relative;
