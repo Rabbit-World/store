@@ -121,7 +121,7 @@ document.getElementById('page-form').addEventListener('submit', function(e) {
                 
             </div><!--sidebar-->
         
-        </div><!--wrap-->... <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="RabbitWorld" data-description="Support me on Buy me a carrot!" data-message="Thank you for visiting. We can now earn more carrots..." data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+        </div><!--wrap-->... <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="RabbitWorld" data-description="Support me on Buy me a carrot!" data-message="Thank you for visiting. Now we can earn more carrot juice..." data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
     
     </body>
     </html>
