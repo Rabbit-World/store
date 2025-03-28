@@ -1,3 +1,25 @@
+// Data for categories
+const tools = [
+    { name: "OCRabbit" }
+];
+
+// Function to update the counters
+function updateCounts() {
+    document.getElementById('toolCount').innerText = tools.length;
+
+    // Show the counter
+    const toolContent = document.getElementById('toolContent');
+    toolContent.innerHTML = '';
+    tools.forEach(tool => {
+        const p = document.createElement('p');
+        p.innerText = tool.name;
+        toolContent.appendChild(p);
+    });
+}
+
+// Update counters when loading page
+updateCounts();
+
 document.getElementById('page-form').addEventListener('submit', function(e) {
   e.preventDefault();
   

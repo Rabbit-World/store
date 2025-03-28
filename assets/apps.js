@@ -1,3 +1,26 @@
+// Data for categories
+const apps = [
+    { name: "Conversions" }
+];
+
+// Function to update the counters
+function updateCounts() {
+    document.getElementById('appCount').innerText = apps.length;
+
+    // Show the counter
+    const appContent = document.getElementById('appContent');
+    appContent.innerHTML = '';
+    apps.forEach(app => {
+        const p = document.createElement('p');
+        p.innerText = app.name;
+        appContent.appendChild(p);
+    });
+
+}
+
+// Update counters when loading page
+updateCounts();
+
 document.getElementById('page-form').addEventListener('submit', function(e) {
   e.preventDefault();
   
@@ -19,3 +42,5 @@ document.getElementById('page-form').addEventListener('submit', function(e) {
   link.download = `app_${app}.html`;
   link.click();
 });
+
+
