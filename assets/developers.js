@@ -54,7 +54,7 @@ document.getElementById('page-form').addEventListener('submit', function(e) {
 			<center>
 			<!--span class="ico msg"><picture><source type="image/webp" srcset="assets/apps/store.webp" style="position: absolute; height: 10%; width: 10%; inset: 0px; color: transparent;"><img src="assets/apps/app.png" alt="rabbit r1 App Store"></picture></span-->
 			<!--picture><source type="image/webp" srcset="assets/apps/store.webp" style="height: 400px; border-radius: 10px; object-fit: cover; color: transparent;"><img src="assets/apps/store.png" alt="rabbit r1 App Store"-->
-			<iframe width="100%" height="450" src="https://www.youtube.com/embed/RGVZ74r_YRo?si=19JveuD2GrpRAwO5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			<iframe class="box-white" width="100%" height="450" src="https://www.youtube.com/embed/RGVZ74r_YRo?si=19JveuD2GrpRAwO5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			</center>
 			
                 <h2 class="title" data-translatable>Developer's Profile // Profilo dello Sviluppatore</h2>
