@@ -139,7 +139,7 @@ border-color:#FF3D00;}
 					border-top:1px solid #015DE6;color:#fff;text-shadow:0 1px 1px #333;}
 					#sidebar .content .nav a span {color:#4C556C;float:right;font-weight:normal;}
 						#sidebar .content .nav a.active span {color:#fff;}
-					#sidebar .content .nav a .ico {background:#999;border-radius:5px;display: inline-block;float: none;height: 28px;margin: -5px 10px 0 0;vertical-align: middle;width: 28px;}
+					#sidebar .content .nav a .ico {background:#ff5f1f;border-radius:3px;display: inline-block;float: none;height: 28px;margin: -5px 10px 0 0;vertical-align: middle;width: 28px;}
 					#sidebar .content .nav a .info {background: #E20000;border: 1px solid #C00;border-radius: 100%;box-shadow:0 1px 1px #999;color: white;font-size: 12px;display: block;padding: 1px 5px;}
 			#sidebar .content p {color:#4C536C;font-size:14px;padding:10px;text-shadow:0 1px 1px #ccc;}
 			
